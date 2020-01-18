@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "jexp-upload",
+    "builds": [
+      { "src": "*.js", "use": "@now/node" }
+  ],
+    "routes": [
+      {
+        "src": "/users",
+        "dest": "/index.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/users",
+        "dest": "/index.js",
+        "methods": ["POST"]
+      }
+    ]
+  }
